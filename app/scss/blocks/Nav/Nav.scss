@@ -1,0 +1,158 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Nav Menu
+.Nav {
+    transition: ease-in 0.2s;
+
+    display: flex;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 100%;
+
+        display: none;
+
+        //// Nav Open 
+        &_open {
+            display: flex;
+        }
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        width: 100%;
+    }    
+}
+    //// Nav Links
+    .Nav-LinkBox {
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+        }
+
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            display: flex;
+        }
+        // Desktop
+        @media (min-width: $desktop) {               
+            display: flex;
+            margin-left: auto;
+        }    
+    }
+        //// Nav Links
+        .Nav-Links {
+            display: flex;
+            justify-content: center;
+
+            transition: ease-in 0.2s;
+
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                flex-direction: column;
+
+                padding-top: 28px;
+                padding-bottom: 27px;
+        
+                font-size: 17px;
+                line-height: 24px;
+        
+                width: 100%;
+        
+                border-top: 1px solid #ECECEC;
+
+                &:last-child {
+                    margin-bottom: -20px;
+                }
+            }
+
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                height: 89px;
+                padding-top: 36px;
+
+                //// Search Link    
+                &_search {
+                    width: 82px;
+
+                    border-left: 1px solid #ececec;
+                }
+
+                //// Basket Link
+                &_basket {
+                    padding-left: 31px;
+                    padding-right: 20px;
+
+                    border-left: 1px solid #ececec;
+                }  
+
+
+                //// Links Move for Tablet             
+                &_catalog {
+                    position: absolute;
+                    z-index: 33;
+                    top: 74px;
+                    left: 50px;
+                }
+                &_order {
+                    position: absolute;
+                    z-index: 33;
+                    top: 74px;
+                    left: 218px;
+                }
+            }
+            // Desktop
+            @media (min-width: $desktop) {     
+                height: 89px;
+                padding-top: 32.5px;
+
+
+                //// Catalog Link
+                &_catalog {
+                    padding-right: 35px;
+                }
+
+                //// Order Link
+                &_order {
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    margin-right: 320px;
+
+                    border-left: 1px solid #ececec;                
+                }    
+                
+                //// Search Link    
+                &_search {
+                    padding-left: 32px;
+                    padding-right: 32px;
+
+                    border-left: 1px solid #ececec;   
+                }  
+                
+                //// Basket Link
+                &_basket {
+                    padding-left: 31px;
+
+
+                    border-left: 1px solid #ececec;
+                    justify-self: flex-end;
+                }              
+
+            }    
+        }

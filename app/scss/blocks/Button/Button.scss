@@ -1,0 +1,138 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Button
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 52px;
+
+    background-color: $mainWhite;
+    border: 2px solid $mainGray;
+
+    cursor: pointer;
+    outline: none;
+
+    transition: ease-out 0.2s;
+
+ 
+
+    //// Actions
+    &:hover, &:focus {
+        background: linear-gradient(0deg, #444444, #444444);
+        transition: ease-out 0.2s;
+        transform: translateY(-5px);
+
+        .Button-Text {
+            color: $mainWhite;
+        }
+    }
+    &:active {
+        .Button-Text {
+            opacity: 0.3;
+        }
+    }
+
+    //// Modal Button
+    &_modalsend {
+        &:hover, &:focus {
+            background: #46C1AE;
+        }
+
+        &_off {
+            background-color: #cecece;
+            cursor: default;
+            &:hover, &:focus {
+                transform: translateY(0);
+                background: #cecece;
+                background-color: #cecece;      
+            }
+            &:active {
+                .Button-Text {
+                    opacity: 1;
+                }
+            }
+        }
+
+        border: none;
+        background-color: $mainGreen;
+
+        .Button-Text {
+            color: $mainWhite;
+        }
+
+
+    }
+
+    //// Modal Button
+    &_modal {
+        border-color: #ECECEC;
+
+        &:hover, &:focus {
+            background: transparent;
+
+            .Button-Text {
+                color: $mainGray;
+            }
+        }
+
+        &_active {
+            border-color: $mainGreen;
+        }
+    }       
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+    }    
+}
+
+//// Button Text
+.Button-Text {
+    margin: 0;
+    padding: 0;
+
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $bold;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: $mainGray;    
+    
+    transition: ease-out 0.2s;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 20px;        
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        font-size: 17px;
+        line-height: 20px;        
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        font-size: 17px;
+        line-height: 20px;          
+    }    
+}

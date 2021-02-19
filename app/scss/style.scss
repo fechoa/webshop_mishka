@@ -1,0 +1,112 @@
+/* World Styles Start */
+// Normalize
+@import 'normalize.scss';
+
+// Fonts
+@import 'fonts.scss';
+
+// Color
+@import 'colors.scss';
+
+// World styles
+@import 'worlds.scss';
+
+// Viewpoports
+@import 'viewports.scss';
+
+// Body
+@import 'blocks/Body/Body.scss';
+
+// Titles 
+@import 'blocks/Title/Title.scss';
+
+// DecorWave
+@import 'blocks/DecorWave/DecorWave.scss';
+
+// DescriptionText
+@import 'blocks/DescriptionText/DescriptionText.scss';
+
+// Button
+@import 'blocks/Button/Button.scss';
+
+// Label
+@import 'blocks/Label/Label.scss';
+
+// Modal
+@import 'blocks/Modal/Modal.scss';
+/* World Styles End */
+
+
+/* Header Styles Start */
+// Header
+@import 'blocks/Header/Header.scss';
+
+    // Logo
+    @import 'blocks/Logo/Logo.scss';
+
+    // Nav
+    @import 'blocks/Nav/Nav.scss';
+
+        // NavLinks
+        @import 'blocks/NavLinks/NavLinks.scss';
+/* Header Styles End */
+
+
+/* Main Styles Start */
+// Main
+@import 'blocks/Main/Main.scss';
+
+    /* Index Page Start */
+    // ContentNav
+    @import 'blocks/ContentNav/ContentNav.scss';
+    
+    // Banner
+    @import 'blocks/Banner/Banner.scss';   
+    
+    // OurProducts
+    @import 'blocks/OurProducts/OurProducts.scss';  
+
+    // ProductWeek
+    @import 'blocks/ProductWeek/ProductWeek.scss';     
+        // LabelWeek
+        @import 'blocks/LabelWeek/LabelWeek.scss';    
+
+        // Specifications
+        @import 'blocks/Specifications/Specifications.scss';         
+        
+    // AboutUs
+    @import 'blocks/AboutUs/AboutUs.scss';        
+
+    // Reviews
+    @import 'blocks/Reviews/Reviews.scss';       
+    
+    // Contacts
+    @import 'blocks/Contacts/Contacts.scss';     
+    /* Index Page End */      
+    
+
+    
+    /* Form Page Start */  
+    // Form
+    @import 'blocks/Form/Form.scss';
+
+    @import 'blocks/InputText/InputText.scss';
+    /* Form Page End */      
+        
+
+    
+    /* Catalog Page Start */  
+    // Catalog
+    @import 'blocks/Catalog/Catalog.scss';    
+    /* Catalog Page End */  
+/* Main Styles End */
+
+
+/* Footer Styles Start */
+// Footer
+@import 'blocks/Footer/Footer.scss';
+
+    // Social 
+    @import 'blocks/Social/Social.scss';
+    
+/* Footer Styles End */

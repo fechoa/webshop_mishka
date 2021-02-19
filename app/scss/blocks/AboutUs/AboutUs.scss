@@ -1,0 +1,303 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// About Us
+.AboutUs {
+    position: relative;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+
+
+        width: 320px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 668px;
+
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 1150px;
+    }    
+}
+
+    //// Decor Wave Line Gray
+    .AboutUs-DecorWave {
+        position: absolute;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            left: 0;
+            top: -25px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            left: -52px;
+
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            left: 0;
+        }    
+    }
+
+    //// Title
+    .AboutUs-Title {
+        margin: 0;
+        padding: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin-bottom: 82px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            padding-top: 55.5px;
+            margin-bottom: 42px;
+            width: 100%;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            padding-top: 68px;
+            margin-bottom: 39px;
+            width: 100%;
+        }    
+    }
+
+    //// List Advantages
+    .AboutUs-List {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+
+            width: 100%;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+
+            width: 675px;
+        }    
+    }    
+
+        //// Item 
+        .AboutUs-Item {
+            position: relative;
+
+            margin: 0;
+            padding: 0;
+
+            //// Icons!!!
+                ///// Flower
+                &:first-child .AboutUs-Text::before {
+                    width: 33px;
+                    height: 38px;
+
+                    background-image: url('../../../img/svg/AboutUs-Flower.svg');
+                }
+                ///// Money
+                &:nth-child(2) .AboutUs-Text::before {
+                    width: 47px;
+                    height: 27px;
+
+                    background-image: url('../../../img/svg/AboutUs-Money.svg');
+                }
+                ///// Heart
+                &:nth-child(3) .AboutUs-Text::before {
+                    width: 34px;
+                    height: 27px;
+
+                    background-image: url('../../../img/svg/AboutUs-Heart.svg');
+                }
+                ///// Circle
+                &:nth-child(4) .AboutUs-Text::before {
+                    width: 35px;
+                    height: 34px;
+
+                    background-image: url('../../../img/svg/AboutUs-Circle.svg');
+                }
+                ///// Rocket
+                &:nth-child(5) .AboutUs-Text::before {
+                    width: 55px;
+                    height: 23px;
+
+                    background-image: url('../../../img/svg/AboutUs-Rocket.svg');
+                }
+                ///// Present
+                &:last-child .AboutUs-Text::before {
+                    width: 33px;
+                    height: 32px;
+
+                    background-image: url('../../../img/svg/AboutUs-Present.svg');
+                }               
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                margin-bottom: 82px;     
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                width: 50%;
+                height: 100px;
+
+                margin-bottom: 57px;
+
+                //// Order Value
+                &:first-child {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &:nth-child(3) {
+                    order: 5;
+                    margin-bottom: 0;
+                }
+                &:nth-child(4) {
+                    order: 2;
+                }
+                &:nth-child(5) {
+                    order: 4;
+                }
+                &:last-child {
+                    order: 6;
+                    margin-bottom: 0;
+                }
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                width: 50%;
+                height: 100px;
+
+                margin-bottom: 57px;
+
+
+                //// Order Value
+                &:first-child {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &:nth-child(3) {
+                    order: 5;
+                    margin-bottom: 0;
+                }
+                &:nth-child(4) {
+                    order: 2;
+                }
+                &:nth-child(5) {
+                    order: 4;
+                }
+                &:last-child {
+                    order: 6;
+                    margin-bottom: 0;
+                }
+            }    
+        }        
+
+            //// Text & Icon 
+            .AboutUs-Text {
+                margin: 0;
+                padding: 0;
+
+                font-family: $basicFont;
+                font-style: normal;
+                font-weight: $bold;
+
+
+                
+                color: $mainBlack;              
+                
+                //// Icons
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                                                                             
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    font-size: 17px;
+                    line-height: 20px;
+
+                    //// Icons
+                    &::before {
+                        top: -55px;
+                    }                    
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    font-size: 20px;
+                    line-height: 22px;     
+                    
+                    //// Icons
+                    &::before {
+                        top: 0px;
+                    }                      
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    font-size: 20px;
+                    line-height: 22px;
+
+                    //// Icons
+                    &::before {
+                        top: 0px;
+                    }                     
+                }    
+            }              

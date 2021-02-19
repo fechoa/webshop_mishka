@@ -1,0 +1,33 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+.Logo {
+    display: none;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        &_m {
+            display: block;
+        }
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        &_t {
+            display: block;
+        }
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        &_d {
+            display: block;
+        }
+    }    
+}

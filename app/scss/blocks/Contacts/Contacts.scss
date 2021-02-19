@@ -1,0 +1,285 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Contacts
+.Contacts {
+    position: relative;
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        display: flex;
+
+        flex-direction: column;
+        width: 260px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        display: flex;
+
+        flex-direction: column;
+        width: 668px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 461px 527px;
+        grid-template-rows: min-content min-content min-content;
+
+        width: 1050px;
+        min-height: 457px;
+    }    
+}
+
+    //// Decoration Wave Line
+    .Contacts-DecorWave {
+        position: absolute;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            left: -30px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            left: -50px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            left: -52px;
+        }
+    }
+
+    //// Title
+    .Contacts-Title {
+        position: relative;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            padding-top: 20px;
+            margin-bottom: 28px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            padding-top: 68px;
+            margin-bottom: 49px;
+
+            //// Flag Ico
+            &::after {
+                position: absolute;
+                content: '';
+                top: 46px;
+                right: 0;
+
+                width: 47px;
+                height: 81px;
+
+                background-repeat: no-repeat;
+                background-size: 47px 81px;
+                background-position: center;
+                background-image: url('../../../img/svg/Contacts-Flag.svg');
+            }
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            padding-top: 150px;
+            padding-left: 60px;
+
+            margin-bottom: 34px;
+
+            //// Flag Ico
+            &::before {
+                position: absolute;
+                content: '';
+                top: 132px;
+                left: -64px;
+
+                width: 47px;
+                height: 81px;
+
+                background-repeat: no-repeat;
+                background-size: 47px 81px;
+                background-position: center;
+                background-image: url('../../../img/svg/Contacts-Flag.svg');
+            }            
+        }
+    }
+
+    //// Content Box
+    .Contacts-ContentBox {
+        display: flex;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            flex-direction: column;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            flex-direction: row;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            flex-direction: column;
+            padding-left: 60px;
+        }
+    }    
+
+        //// Email Box
+        .Contacts-EmailBox {
+            display: flex;
+            align-items: flex-start;
+            
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                flex-direction: row;
+
+                margin-bottom: 30px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                flex-direction: row;
+
+                margin-right: 50px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                flex-direction: row;
+
+                margin-bottom: 30px;                
+            }
+        }        
+
+        //// Address Box
+        .Contacts-AddressBox {
+            display: flex;
+            align-items: flex-start;
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                flex-direction: row;
+                margin-bottom: 62px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                flex-direction: row;
+                margin-bottom: 49px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                flex-direction: row;
+            }
+        }         
+
+            //// Text 
+            .Contacts-Text {
+                margin: 0;
+                padding: 0;
+
+                font-family: $basicFont;
+                font-style: normal;
+                font-weight: $normal;
+                
+                
+                color: $mainGray;                
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    font-size: 14px;
+                    line-height: 30px;
+
+                    ///// Label Title
+                    &_title {
+                        margin-right: 33px;
+                    }
+
+                    ///// Label Email Border Bottom
+                    &_email {
+                        line-height: 25px;
+                        border-bottom: 1px solid #62D1BA;
+                    }
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    font-size: 17px;
+                    line-height: 30px;             
+                    
+                    ///// Label Title
+                    &_title {
+                        margin-right: 25px;
+                    }        
+                    
+                    ///// Label Email Border Bottom
+                    &_email {
+                        line-height: 25px;
+                        border-bottom: 1px solid #62D1BA;
+                    }                    
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    font-size: 17px;
+                    line-height: 30px;    
+                    
+                    ///// Label Title
+                    &_title {
+                        margin-right: 25px;
+                    }        
+                    
+                    ///// Label Email Border Bottom
+                    &_email {
+                        border-bottom: 1px solid #62D1BA;
+                    }                      
+                }
+            }                 
+
+
+    //// Map 
+    .Contacts-Map {
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            width: 260px;
+            height: 454px;        
+            
+            margin-bottom: 42px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            width: 668px;
+            height: 457px;   
+            
+            margin-bottom: 55px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            width: 527px;
+            height: 557px;
+            
+            padding-top: 71px;
+            margin-bottom: 55px;
+            
+            grid-column: 2 / 3;
+            grid-row: 1 / span 4;
+        }
+    }            
+
+    //// Button 
+    .Contacts-Button {
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {        
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            align-self: center;
+            width: 230px;
+            margin-bottom: 57px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            margin-top: 84px;
+            margin-left: 112px;
+            width: 230px;
+        }
+    }        

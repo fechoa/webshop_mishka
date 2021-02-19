@@ -1,0 +1,42 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Description Text
+.DescriptionText {
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $normal;
+
+    
+    color: $mainGray;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        font-size: 15px;
+        line-height: 24px;       
+        
+        // Form Page
+        &_formpage {
+            font-size: 13px;
+        }
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        font-size: 17px;
+        line-height: 30px;        
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        font-size: 17px;
+        line-height: 30px;        
+    }    
+}

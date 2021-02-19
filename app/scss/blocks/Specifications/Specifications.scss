@@ -1,0 +1,93 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Specifications
+.Specifications {
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $normal;
+
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: $mainGray;    
+
+    display: flex;
+    flex-direction: column;
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        width: 260px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        width: 291px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        width: 291px;
+    }    
+}
+
+    //// Wrapper Col
+    .Specifications-Col {  
+        display: flex;
+
+
+        width: 100%;
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        border-bottom: 1px solid #ececec;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+        }    
+    }
+
+        //// Title
+        .Specifications-Title {
+            margin: 0;
+            padding: 0;
+
+            width: 97px;
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }
+
+        //// Description
+        .Specifications-Descr {
+            margin: 0;
+            padding: 0;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }

@@ -1,0 +1,192 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// OurProducts
+.OurProducts {
+    display: flex;
+
+    background-color: #FAFAFA;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        flex-direction: column;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        height: 124px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        height: 124px;
+    }    
+}
+
+    //// Links
+    .OurProducts-Link {
+        display: flex;
+        text-decoration: none;
+
+        &:first-child {
+            background-color: #63D1BB;
+        }
+
+        &:last-child {
+            background-color: #56C3B2;
+        }
+
+        transition: ease-in 0.2s;
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            justify-content: space-between;
+
+            width: 100%;
+            height: 103px;
+
+            padding-left: 30px;
+            padding-right: 30px;
+
+            //// Actions 
+            &:hover, &:focus {
+                opacity: 0.8;
+            }
+            &:active {
+                //// Ico
+                .OurProducts-Ico {
+                    opacity: 0.3;
+                }
+            }
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            justify-content: space-between;
+
+            width: 100%;
+            height: 119px;
+            
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            //// Actions 
+            &:hover, &:focus {
+                height: 124px;
+                padding-top: 5px;
+            }
+            &:active {
+                //// Ico
+                .OurProducts-Ico {
+                    opacity: 0.3;
+                }
+            }            
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            justify-content: space-between;
+
+            width: 100%;
+            height: 119px;
+            
+            padding-left: 50px;
+            padding-right: 50px;        
+
+            //// Actions 
+            &:hover, &:focus {
+                height: 124px;
+                padding-top: 5px;
+            }
+            &:active {
+                //// Ico
+                .OurProducts-Ico {
+                    opacity: 0.3;
+                }
+            }              
+        }    
+    }
+
+        //// Text
+        .OurProducts-Text {
+            font-family: $basicFont;
+            font-style: normal;
+            font-weight: $bold;
+
+            
+            color: $mainWhite;
+
+            margin: 0;
+            padding: 0;
+
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                font-size: 19px;
+                line-height: 24px;             
+                
+                margin-top: 23px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                font-size: 20px;
+                line-height: 30px;
+
+                margin-top: 25px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                font-size: 20px;
+                line-height: 30px;        
+                
+                margin-top: 25px;                
+            }    
+        }    
+
+        //// Ico
+        .OurProducts-Ico {
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                //// Lamp Ico
+                &_lamp {
+                    margin-top: 23px;
+                    margin-right: 6px;
+               }
+                //// Lego Ico
+                &_lego {
+                    margin-top: 21px;
+                    margin-right: -3px;
+               }               
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                //// Lamp Ico
+                &_lamp {
+                    margin-top: 30px;
+                    margin-right: 6px;
+               }
+                //// Lego Ico
+                &_lego {
+                    margin-top: 31px;
+                    margin-right: -3px;
+               }      
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                //// Lamp Ico
+                &_lamp {
+                    margin-top: 30px;
+                    margin-right: 6px;
+               }
+                //// Lego Ico
+                &_lego {
+                    margin-top: 31px;
+                    margin-right: -3px;
+               }       
+            }    
+        }            

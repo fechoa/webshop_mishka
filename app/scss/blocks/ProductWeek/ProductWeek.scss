@@ -1,0 +1,294 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Product Week
+.ProductWeek {
+    position: relative;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 36px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content min-content min-content 110px;
+
+        min-width: 768px;
+
+        margin-bottom: 52px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+       
+
+        width: 875px;
+
+        margin-bottom: 73px;
+    }    
+}
+
+    //// Decoration Wave Line
+    .ProductWeek-DecorWave {
+        position: absolute;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            display: none;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            top: -62px;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            top: -14px;
+            left: 50%;
+            transform: translate(-50%); 
+        }    
+    }
+
+    //// Title Section
+    .ProductWeek-Title {
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin-bottom: 3.5px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            grid-row: 1 / 2;
+            grid-column: span 2;
+
+            margin-bottom: 37px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            margin-top: 115px;
+            margin-bottom: 35px;
+        }    
+    }    
+
+    //// SubTitle Product of Week
+    .ProductWeek-TopLabel {
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin-bottom: 17.5px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            position: absolute;
+            top: 10px;
+            right: 70px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            position: absolute;
+            top: 130px;
+            left: -125px;
+        }    
+    }        
+
+    //// Description
+    .ProductWeek-Descr {
+        padding: 0;
+        margin: 0;
+
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            grid-row: 2 / 3;
+            grid-column: span 1;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            margin-bottom: 60px;
+        }    
+    }         
+
+
+    //// Specifications List
+    .ProductWeek-Specifications {
+        margin: 0;
+        padding: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin-bottom: 28px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            grid-row: 3 / 4;
+            grid-column: span 1;
+
+            margin-bottom: 20px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            margin-bottom: 109px;
+        }    
+    }             
+
+    //// Photo Product 
+    .ProductWeek-Photo {
+        margin: 0;
+        padding: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            width: 260px;
+            height: 315px;
+
+            margin-bottom: 25.5px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            width: 334px;
+            height: 404px;
+
+            grid-row: span 3;
+            grid-column: 2 / 3;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            position: absolute;
+            z-index: -1;
+            top: 74px;
+            right: 0;
+
+            width: 525px;
+            height: 636px;
+        }    
+    }          
+
+        //// Photo Image
+        .ProductWeek-Img {
+            display: none;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                &_m {
+                    display: block;
+                }
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                &_t {
+                    display: block;
+                }
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                &_d {
+                    display: block;
+                }
+            }    
+        }      
+
+    //// Order Box - Button and Price 
+    .ProductWeek-OrderBox {
+        margin: 0;
+        padding: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            grid-row: 4 / 5;
+            grid-column: span 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 292px;
+            height: 109px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 292px;
+            height: 109px;
+        }    
+    }     
+    
+        //// Price
+        .ProductWeek-Price {
+            margin: 0;
+            padding: 0;
+
+            font-family: $basicFont;
+            font-style: normal;
+            font-weight: $bold;
+            
+            text-align: center;
+            
+            color: $mainGray;
+            
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                font-size: 17px;
+                line-height: 24px;
+
+                margin-bottom: 24.5px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                font-size: 20px;
+                line-height: 24px;
+            }    
+        }    
+        
+        //// Button
+        .ProductWeek-Button {
+            margin: 0;
+            padding: 0;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                width: 100%;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+
+            }    
+        }                   

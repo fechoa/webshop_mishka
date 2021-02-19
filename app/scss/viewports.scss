@@ -1,0 +1,22 @@
+// Adaptive ViewPorts
+
+
+//// Mobile width
+$mobile: 320px;
+
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+
+
+//// Tablet width
+$tablet: 768px;
+
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+
+
+//// Desktop
+$desktop: 1150px;
+
+@media (min-width: $desktop) {
+}

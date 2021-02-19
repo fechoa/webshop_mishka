@@ -1,0 +1,165 @@
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Label
+.Label {
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $bold;
+    
+    
+    color: $mainBlack;
+
+    transition: all .5s ease-in-out;
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        font-size: 17px;
+        line-height: 18px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        font-size: 19px;
+        line-height: 18px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        font-size: 19px;
+        line-height: 18px;
+    }    
+}
+
+/* RADIO LABEL STYLE START*/
+//// Input Style Radio
+.Label_radio::before {
+        position: absolute;
+
+        content: "";
+
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $mainGray;
+        border-radius: 50%; 
+
+        transition: all .5s ease-in-out;
+
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        background-size: 18px 18px;
+
+        top: -5px;
+        left: 0;
+        
+
+        width: 42px;
+        height: 42px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        background-size: 23px 23px;
+
+        top: -15px;
+        left: 0;
+
+        width: 52px;
+        height: 52px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        background-size: 23px 23px;
+
+        top: -15px;
+        left: 0;
+
+        width: 52px;
+        height: 52px;
+    }    
+}
+/* RADIO LABEL STYLE END*/
+
+/* CHECKBOX LABEL STYLE START*/
+.Label_check::before {
+    position: absolute;
+
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid $mainGray;
+
+    transition: all .5s ease-in-out;
+
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        background-size: cover;
+
+        top: -5px;
+        left: 0;
+        
+
+        width: 42px;
+        height: 42px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        background-size: cover;
+
+        top: 0;
+        left: 0;
+
+        width: 52px;
+        height: 52px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        background-size: cover;
+
+        top: 0;
+        left: 0;
+
+        width: 52px;
+        height: 52px;
+    }    
+}
+/* CHECKBOX LABEL STYLE END*/
+
+
+
+
+//// Actions
+.Label:hover, .Label:focus {
+    color: $mainGreen;
+    transition: all .5s ease-in-out;
+    &::before {
+        border-color: $mainGreen;
+        transition: all .5s ease-in-out;
+    }
+
+}
+.Label:hover, .Label:focus {
+    color: #B3B3B3;
+    transition: all .5s ease-in-out;
+    &::before {
+        border-color: #B3B3B3;
+        transition: all .5s ease-in-out;
+    }
+
+}
+
+input:checked + .Label_radio::before {
+    background-image: url("../../../img/svg/Form-Input.svg");
+    transition: ease-in 0.2s;
+}
+
+input:checked + .Label_check:before {
+    background-image: url("../../../img/svg/Accept-ArrowIco.svg");
+    transition: ease-in 0.2s;
+}

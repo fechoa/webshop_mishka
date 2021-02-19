@@ -1,0 +1,761 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Form
+.Form {
+    display: flex;
+    flex-direction: column;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        margin: 0 auto;
+        min-width: 260px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        margin: 0 auto;
+        min-width: 668px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        margin: 0 auto;
+        min-width: 1050px;
+    }    
+}
+
+    //// Form Field Area
+    .Form-Field {
+        position: relative;
+
+        display: flex;
+
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            flex-direction: column;
+
+            //// 1 Type Field 
+            &_type {
+                height: 129px;
+                margin-bottom: 43px;
+            }       
+            //// 2 Color Field 
+            &_colors {
+                margin-bottom: 33px;
+            }       
+            //// 3 Name Field 
+            &_name {
+                margin-bottom: 34.5px;
+            }  
+            //// 4 Contacts Field 
+            &_contacts {
+            }            
+            //// 5 Advanced Field 
+            &_advanced {
+                margin-bottom: 17px;
+            }                                      
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            padding-left: 187px;
+            
+
+            //// Type Field 1 
+            &_type {
+                height: 94px;
+                margin-bottom: 132px;
+            }
+            //// 2 Color Field 
+            &_colors {
+                margin-bottom: 136px;
+
+                &::before {
+                    position: absolute;
+                    top: -59px;
+                    left: -39px;
+
+                    content: "";
+
+                    width: 765px;
+                    height: 304px;
+                    background-color: $mainLightGray;
+                }
+            }    
+            //// 3 Name Field 
+            &_name {
+                margin-bottom: 115px;
+            }              
+            //// 4 Contacts Field 
+            &_contacts {
+                margin-bottom: 100px;
+
+                &::before {
+                    position: absolute;
+                    top: -53px;
+                    left: -39px;
+
+                    content: "";
+
+                    width: 765px;
+                    height: 228px;
+                    background-color: $mainLightGray;
+                }                
+            } 
+            //// 5 Advanced Field 
+            &_advanced {
+                margin-bottom: 53px;
+                width: 100%;
+            }    
+
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            padding-left: 174px;
+            
+            //// Type Field 1 
+            &_type {
+                height: 94px;
+                margin-bottom: 133px;
+            }
+            //// 2 Color Field 
+            &_colors {
+                margin-bottom: 120px;
+
+                &::before {
+                    position: absolute;
+                    top: -69px;
+                    left: -50px;
+
+                    content: "";
+
+                    width: 1150px;
+                    height: 228px;
+                    background-color: $mainLightGray;
+                }                
+            }   
+            //// 3 Name Field 
+            &_name {
+                margin-bottom: 116px;
+            }     
+            //// 4 Contacts Field 
+            &_contacts {
+                margin-bottom: 100px;
+
+                &::before {
+                    position: absolute;
+                    top: -50px;
+                    left: -50px;
+
+                    content: "";
+
+                    width: 1150px;
+                    height: 228px;
+                    background-color: $mainLightGray;
+                }                  
+            } 
+            //// 5 Advanced Field 
+            &_advanced {
+                margin-bottom: 49px;
+            }                                                      
+        }    
+    }
+
+        //// Form Legend Title 
+        .Form-Title {
+            position: relative;
+
+            font-family: $basicFont;
+            font-style: normal;
+            font-weight: $bold;
+
+            color: $mainGreen;
+
+            text-transform: uppercase;
+
+            margin: 0;
+            padding: 0;
+
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                font-size: 17px;
+                line-height: 16px;  
+                
+                margin-bottom: 35px;
+                &_name {
+                    margin-bottom: 28px;
+                }
+                &_advanced {
+                    margin-bottom: 28px;
+                }
+                
+                ///// Green Line Decoration
+                &::after {
+                    position: absolute;
+                    top: 7px;
+                    left: 60px;
+
+                    width: 200px;
+                    height: 1px;
+                    background-color: #62D1BA;
+
+                    content: "";
+                }
+                &_tel::after {
+                    position: absolute;
+                    top: 10px;
+                    left: 60px;
+
+                    width: 200px;
+                    height: 1px;
+                    background-color: #62D1BA;
+
+                    content: "";                    
+                }
+                &_email::after {
+                    position: absolute;
+                    top: 10px;
+                    left: 78px;
+
+                    width: 182px;
+                    height: 1px;
+                    background-color: #62D1BA;
+
+                    content: "";                    
+                }
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                position: absolute;
+                top: 5px;
+                left: 50px;
+                
+                font-size: 17px;
+                line-height: 16px;     
+                
+                &_contacts {
+                    z-index: 2;
+                    left: -135px;
+                    top: 24px;
+                }
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                position: absolute;
+                top: 5px;
+                left: 50px;
+                
+                font-size: 17px;
+                line-height: 16px;  
+                
+                &_contacts {
+                    z-index: 2;
+                    left: -123px;
+                    top: 24px;
+                }
+            }    
+        }    
+
+        //// Form Body (Content Fieldset)
+        .Form-Body {
+            display: flex;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                flex-direction: column;
+
+                ///// Name Body
+                &_name {
+                    width: 100%;
+                }                
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                flex-direction: column;
+
+
+                ///// Checkbox Body
+                &_checkbox {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 501px;
+                    margin-top: -16px;
+                }
+                ///// Name Body
+                &_name {
+                    flex-direction: column;
+                    width: 501px;
+
+                    margin-top: -14px;
+                }    
+                ///// Contacts Body
+                &_contacts {
+                    flex-direction: column;
+                    width: 499px;
+                }                               
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                flex-direction: column;
+
+                ///// Checkbox Body
+                &_checkbox {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 871px;
+                    margin-top: -19px;
+                }  
+                ///// Name Body
+                &_name {
+                    flex-direction: column;
+                    width: 698px;
+
+                    margin-top: -14px;
+                }        
+                ///// Contacts Body
+                &_contacts {
+                    flex-direction: column;
+                    width: 698px;
+                }                                             
+            }    
+        }
+
+            //// Form Radio Box 
+            .Form-RadioBox {
+                position: relative;
+
+                display: flex;
+
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    align-items: center;
+                    padding-left: 55px;
+                    margin-bottom: 24px;
+                    min-height: 36px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    margin-bottom: 58px;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    margin-bottom: 58px;
+                }    
+            }
+
+                //// Form Radio Button (hide) 
+                .Form-RadioButton {
+                    display: none;
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                    }    
+                }            
+
+                //// Form Radio Label
+                .Form-Label {
+                    cursor: pointer;
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                        //// Radio Label
+                        &_radio {
+                            padding-left: 5px;
+                        }
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        //// Radio Label
+                        &_radio {
+                            padding-left: 70px;
+                        }
+                        
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        //// Radio Label
+                        &_radio {
+                            padding-left: 80px;
+                        }                        
+                    }    
+                }       
+
+                    //// Form Row Break
+                    .Form-LabelRow {
+                        display: none;
+                        // Mobile
+                        @media (min-width: $mobile) and (max-width: 767px) {
+                            &_m {
+                                display: block;
+                            }
+                        }
+                        // Tablet
+                        @media (min-width: $tablet) and (max-width: 1149px) {
+
+                        }
+                        // Desktop
+                        @media (min-width: $desktop) {
+                        }    
+                    }                       
+
+
+            //// Form Input Box 
+            .Form-InputBox {
+                position: relative;
+
+                display: flex;
+   
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    align-items: center;
+                    height: 38px;
+
+                    margin-bottom: 23px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    padding-left: 61px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    align-items: center;
+                    height: 52px;
+                    width: 50%;
+                    margin-bottom: 24px;
+                    &:nth-child(5), &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    align-items: center;
+                    height: 52px;
+                    width: 33%;
+                    margin-bottom: 24px;
+                }    
+            }   
+            
+                //// Form Checkbox 
+                .Form-Checkbox {
+                    display: none;
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                    }    
+                }            
+                
+                //// Form Label for Checkbox
+                .Form-LabelCheck {
+                    cursor: pointer;
+                    
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        padding-left: 80px;
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        padding-left: 80px;
+                    }    
+                }     
+
+            
+                //// Form TextBox for Body Name
+                .Form-TextBox {
+                    display: flex;
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                        flex-direction: column;
+                        margin-bottom: 22px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        width: 100%;
+                        align-items: center;
+                        margin-bottom: 24px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        width: 100%;
+                        align-items: center;
+                        margin-bottom: 24px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }                        
+                }
+
+                    //// Form TextBox for Body Name
+                    .Form-NameLabel {
+
+                        // Mobile
+                        @media (min-width: $mobile) and (max-width: 767px) {
+                        }
+                        // Tablet
+                        @media (min-width: $tablet) and (max-width: 1149px) {
+                            margin-right: 25px;                            
+                        }
+                        // Desktop
+                        @media (min-width: $desktop) {
+                            margin-right: 24px;
+                        }                        
+                    }                
+
+
+                    //// Form TextBox for Body Name
+                    .Form-Text {
+                        // Mobile
+                        @media (min-width: $mobile) and (max-width: 767px) {
+                            width: 100%;
+                        }
+                        // Tablet
+                        @media (min-width: $tablet) and (max-width: 1149px) {
+                            flex-grow: 1;
+                        }
+                        // Desktop
+                        @media (min-width: $desktop) {
+                            flex-grow: 1;
+                        }                        
+                    }                      
+
+                //// Form Contacts Box
+                .Form-ContactsBox {
+                    position: relative;
+
+                    &_email {
+                        &::after {
+                            position: absolute;
+                            content: "";
+                    
+                            width: 32px;
+                            height: 21px;
+                    
+                            background-image: url("../../../img/svg/InputText_mail.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }    
+
+                    &_phone {
+                        &::after {
+                            position: absolute;
+                
+                            content: "";
+                    
+                            width: 25px;
+                            height: 24px;
+                    
+                            background-image: url("../../../img/svg/InputText_phone.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    } 
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                        margin-bottom: 34.5px;
+
+                        &_email, &_phone {
+                            &::after {
+                                top: 32px;
+                                left: 225px;
+                            }
+                        }
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        margin-bottom: 24px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &_email {
+                            &::after {
+                                top: 14px;
+                                right: 10px;
+                            }
+                        }
+                        &_phone {
+                            &::after {
+                                top: 14px;
+                                right: 14px;
+                            }
+                        }
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        margin-bottom: 24px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &_email {
+                            &::after {
+                                top: 14px;
+                                right: 10px;
+                            }
+                        }
+                        &_phone {
+                            &::after {
+                                top: 14px;
+                                right: 14px;
+                            }
+                        }
+                    }
+                }                    
+                    //// Form Text Contacts
+                    .Form-TextContacts {
+
+                        // Mobile
+                        @media (min-width: $mobile) and (max-width: 767px) {
+                            width: 100%;
+                        }
+                        // Tablet
+                        @media (min-width: $tablet) and (max-width: 1149px) {
+                            width: 100%;
+                        }
+                        // Desktop
+                        @media (min-width: $desktop) {
+                            width: 100%;
+                        }                        
+                    }                     
+
+                //// Form Comments TextArea
+                .Form-Comments {
+                    resize: none;
+                    border: 2px solid #444444;
+                    width: 100%;
+
+                    padding: 17px;
+
+                    &::placeholder {
+                        color: #b3b3b3;
+                    }
+
+                    color: $mainBlack;
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                        min-height: 142px;
+                       
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        min-height: 142px;
+                        margin-top: -12px;
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        width: 700px;
+                        min-height: 142px;
+                    }                        
+                }                        
+
+        //// Form Button Box Enter
+        .Form-ButtonBox {
+            display: flex;
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                flex-direction: column;
+                margin-bottom: 55px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                padding-left: 40px;
+                margin-bottom: 50px;
+                
+
+                align-items: center;
+                justify-content: space-between;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                padding-left: 173px;
+                padding-right: 174px;
+                margin-bottom: 50px;
+
+                
+                align-items: center;
+                justify-content: space-between;
+            }    
+        }                   
+
+            //// Form Info Enter 
+            .Form-WritingIt {
+                font-family: $basicFont;
+                font-style: normal;
+                font-weight: $normal;
+                font-size: 14px;
+                line-height: 16px;
+                
+                
+                color: $mainGray;                
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    margin-bottom: 30px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    order: 2;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    order: 2;
+                }    
+            }          
+            //// Form Button Enter 
+            .Form-Button {
+                               
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    order: 1;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    order: 1;
+                }    
+            }                                                        

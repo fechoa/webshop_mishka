@@ -1,0 +1,109 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Banner
+.Banner {
+    background-color: #FAFAFA;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        min-height: 282px;
+        width: 100%;        
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        min-height: 561px;
+        width: 100%;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        min-height: 561px;
+        width: 100%;        
+    }
+}
+
+    //// Banner Wrapper
+    .Banner-Wrapper {
+        background-color: #FAFAFA;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            min-height: 282px;
+            width: 260px;
+
+            margin: 0 auto;
+            padding-top: 73px;
+
+            background-image: url('../../../img/png/Banner-Bg_m.png');
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            min-height: 561px;
+            width: 667px;
+
+            margin: 0 auto;
+            padding-top: 89px;
+
+            background-image: url('../../../img/png/Banner-Bg_t.png');            
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            min-height: 561px;
+            width: 1050px;
+
+            margin: 0 auto;
+            padding-top: 92px;
+
+            background-image: url('../../../img/png/Banner-Bg_d.png');            
+        }    
+    }
+
+        //// Banner Title
+        .Banner-Title {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                max-width: 260px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                max-width: 501px;
+                margin: 0 auto;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                max-width: 640px;
+                margin: 0 auto;
+            }    
+        }
+            
+            //// Row Breake
+            .Banner-Row {
+                display: none;
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    &_m {
+                        display: block;
+                    }
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                }    
+            }
+

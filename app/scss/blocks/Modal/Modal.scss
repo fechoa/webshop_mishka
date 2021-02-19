@@ -1,0 +1,255 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+.Modal {
+    display: flex;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    position: fixed;
+
+    padding-top: 236px;
+
+    width: 100%;
+    height: 100%;
+
+    &_off {
+        display: none;
+    }
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        z-index: 65;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {  
+        z-index: 99;
+        top: 0;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        z-index: 99;
+        top: 0;
+    }
+}
+
+.Modal-Content {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $mainWhite;
+
+    height: 336px;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        align-items: center;
+        margin: 0 auto;
+
+        width: 336px;
+
+
+        padding-top: 28px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 46px;
+
+        border: 1px solid #C6C6C6;
+        box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);        
+        
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        width: 566px;
+
+        padding-top: 37px;
+        padding-bottom: 46px;
+
+
+        margin: 0 auto;
+        box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        width: 566px;
+
+        padding-top: 37px;
+        padding-bottom: 46px;
+
+
+        margin: 0 auto;
+        box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);        
+    }
+}
+
+    .Modal-Title {
+        padding: 0;
+        margin: 0;
+
+        font-family: $basicFont;
+        font-style: normal;
+        font-weight: $bold;
+        
+
+        text-transform: uppercase;
+        text-align: center;
+        
+        color: $mainBlack;        
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            font-size: 25px;
+            line-height: 30px;       
+            
+            margin-bottom: 14px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            font-size: 30px;
+            line-height: 57px;    
+            
+            margin-bottom: 11px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            font-size: 30px;
+            line-height: 57px;   
+            
+            margin-bottom: 11px;
+        }
+    }
+
+    .Modal-TitleRow {
+        display: none;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            &_m {
+                display: block;
+            }
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+        }
+    }    
+
+    .Modal-Descr {
+        padding: 0;
+        margin: 0;
+
+        font-family: $basicFont;
+        font-style: normal;
+        font-weight: $normal;
+
+
+        text-align: center;
+        
+        color: $mainGray;        
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            font-size: 15px;
+            line-height: 30px;      
+            
+            margin-bottom: 21px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            font-size: 17px;
+            line-height: 30px;          
+            
+            margin-bottom: 19px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            font-size: 17px;
+            line-height: 30px;      
+            
+            margin-bottom: 19px;
+        }
+    }    
+
+    .Modal-ButtonsBox {
+        display: flex;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            width: 100%;
+
+            justify-content: space-between;
+            margin-bottom: 31px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            margin: 0 auto;
+            width: 350px;
+
+            justify-content: space-between;
+            margin-bottom: 31px;
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            margin: 0 auto;
+            width: 350px;
+
+            justify-content: space-between;
+            margin-bottom: 31px;
+        }
+    }        
+
+        .Modal-Button {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                width: 82px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                width: 112px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                width: 112px;
+            }
+        }            
+
+        .Modal-ButtonText {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }
+        }                    
+
+
+        .Modal-ButtonSend {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                width: 100%;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                width: 350px;
+
+                margin: 0 auto;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                width: 350px;
+
+                margin: 0 auto;                
+            }
+        }         

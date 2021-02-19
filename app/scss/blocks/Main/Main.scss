@@ -1,0 +1,723 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+/* World Main Styles Start */
+//// Main
+.Main {
+    position: relative;
+
+    width: 100%;
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        margin-top: 79px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+    }    
+}
+    //// Main Wrapper
+    .Main-Wrapper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 auto;
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            min-width: 320px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            min-width: 768px;            
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            min-width: 1150px;              
+        }    
+    }
+        //// Main Nav
+        .Main-Nav {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }    
+/* World Main Styles End */
+
+
+
+/* Index Page Start */
+        //// Main Banner
+        .Main-Banner {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;        
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;              
+            }     
+        }            
+
+        //// Main OurProducts
+        .Main-OurProducts {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }          
+
+        //// Main ProductWeek
+        .Main-ProductWeek {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+                margin-top: 26px;
+
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;
+                margin-top: 51.5px;
+
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;
+
+            }    
+        }      
+        
+        //// Main AboutUs
+        .Main-AboutUs {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+                margin-top: 26px;
+                margin-bottom: 58px;
+
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;
+                margin-bottom: 83px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;
+                margin-bottom: 90px;
+                padding-left: 140px;                
+            }    
+        }   
+        
+        //// Main Reviews
+        .Main-Reviews {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+                margin-bottom: 45px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;
+                padding-top: 82px;
+                margin-bottom: 132px;            
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;
+                padding-top: 78px;
+                margin-bottom: 163px;
+            }    
+        }       
+        
+        //// Main Contacts
+        .Main-Contacts {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+                margin-bottom: 39px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;
+                padding-left: 60px;
+                margin-bottom: 65px;
+            }    
+        }           
+/* Index Page End */
+
+
+
+/* Form Page Start */
+        //// Main TitleBox
+        .Main-TitleBox {
+            background-color: $mainLightGray;
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin-bottom: 17px;
+
+                width: 100%;
+                height: 177px;
+
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+                height: 226px;    
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                width: 100%;
+                height: 255px;                    
+            }    
+        }    
+            //// Main Nav formpage
+            .Main-Nav_formpage {
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    margin-bottom: 45px;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    margin-bottom: 45px;                    
+                }    
+            }     
+        
+            //// Main Title
+            .Main-Title {
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    display: flex;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                }    
+            }          
+
+        //// Main Content
+        .Main-Content {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }     
+
+        //// Main DecorWave
+        .Main-DecorWave {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                display: none;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                position: absolute;
+                
+                top: -10px;
+                left: 50%;
+                transform: translate(-50%)
+
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                position: absolute;
+                
+                top: -15px;
+                left: 50%;
+                transform: translate(-50%)                
+            }    
+        }           
+
+        //// Main Subtitle
+        .Main-Subtitle {
+            padding: 0;
+            margin: 0;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin: 0 auto;
+                margin-bottom: 29px;
+
+                padding-left: 30px;
+                padding-right: 30px;
+                
+                max-width: 380px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin: 0 auto;
+                margin-bottom: 81px;
+
+                padding-top: 54px;
+                padding-left: 50px;
+                padding-right: 50px;
+                max-width: 868px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin: 0 auto;
+                margin-bottom: 81px;
+
+                padding-top: 115px;
+
+                width: 702px;
+            }    
+        }  
+
+        //// Main Subtitle Row
+        .Main-SubtitleRow {
+            display: none;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }          
+
+        //// Main Form
+        .Main-Form {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+            }    
+        }             
+/* Form Page End */
+
+
+
+/* Catalog Page Start */
+        //// Main Content With 
+        .Main-Content {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin-bottom: 32px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin-bottom: 53px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin-bottom: 57px;
+            }
+        }
+
+            //// Main  Catalog List 
+            .Main-CardList {
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    margin: 0 auto;
+
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+
+                }
+            }       
+            
+            //// Main  Video Container 
+            .Main-VideoBox {
+                position: relative;
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    width: 260px;
+
+                    margin: 0 auto;
+                    margin-bottom: 58px;
+                    padding-bottom: 33px;
+
+                    border: 1px solid #ececec;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    display: flex;
+                    flex-direction: column;
+
+                    width: 668px;
+
+                    border: 1px solid #ececec;
+
+                    margin: 0 auto;
+                    padding-bottom: 46px;
+                    margin-bottom: 64px;
+
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    display: grid;
+
+                    margin: 0 auto;
+                    margin-bottom: 105px;
+
+                    width: 1050px;
+                    height: 455px;
+
+                    border: 1px solid #ececec;
+
+                    grid-template-columns: 2fr 1fr;
+                    grid-template-rows: min-content min-content min-content;
+                    column-gap: 79px;
+
+                }
+            }     
+            
+            //// Main  VideoTitle Box 
+            .Main-VideoTitleBox {
+                position: relative;
+
+                &::after {
+                    transition: 0.4s ease-in-out;
+                }
+
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    &::after {
+                        position: absolute;
+                        z-index: 5;
+                        top: 130px;
+                        left: 50%;
+                        transform: translate(-50%);
+
+                        cursor: pointer;
+                        content: "";
+
+                        width: 100.7px;
+                        height: 76.8px;
+
+                        background-image: url("../../../img/svg/Video-PlayIco.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }                    
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    order: 2;
+
+                    &::after {
+                        position: absolute;
+                        z-index: 5;
+                        top: -290px;
+                        left: 50%;
+                        transform: translate(-50%);
+
+                        cursor: pointer;
+                        content: "";
+
+                        width: 100.7px;
+                        height: 76.8px;
+
+                        background-image: url("../../../img/svg/Video-PlayIco.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }                          
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    grid-row: 1 / 2;
+                    grid-column: 2 / 3;
+
+                    padding-top: 96px;
+
+                    &::after {
+                        position: absolute;
+                        z-index: 5;
+                        top: 190px;
+                        left: -470px;
+
+                        cursor: pointer;
+                        content: "";
+
+                        width: 100.7px;
+                        height: 76.8px;
+
+                        background-image: url("../../../img/svg/Video-PlayIco.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }     
+                    
+                    &:hover::after {
+                        transform: scale(1.1);
+                    }
+                }
+            }        
+                //// Main  VideoTitle Text 
+                .Main-VideoTitle {
+                    position: relative;
+
+                    font-family: $basicFont;
+                    font-style: normal;
+                    font-weight: $bold;
+                    
+                    color: $mainBlack;    
+
+                    margin: 0;
+                    padding: 0;
+
+                    // Mobile
+                    @media (min-width: $mobile) and (max-width: 767px) {
+                        font-size: 17px;
+                        line-height: 24px;        
+                        
+                        padding-top: 21.5px;
+                        padding-left: 35px;
+                        margin-bottom: 26.5px;
+
+                        &::before {
+                            position: absolute;
+                            top: 34px;
+                            right: 150px;
+
+                            content: "";
+
+                            width: 32px;
+                            height: 22px;
+
+                            background-image: url("../../../img/svg/VideoCamIco.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    // Tablet
+                    @media (min-width: $tablet) and (max-width: 1149px) {
+                        font-size: 20px;
+                        line-height: 24px; 
+                        
+                        padding-left: 107px;
+                        margin-bottom: 24.5px;
+
+                        &::before {
+                            position: absolute;
+                            top: -2px;
+                            left: 42px;
+
+                            content: "";
+
+                            width: 32px;
+                            height: 22px;
+
+                            background-image: url("../../../img/svg/VideoCamIco.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }                        
+                    }
+                    // Desktop
+                    @media (min-width: $desktop) {
+                        font-size: 20px;
+                        line-height: 24px;   
+                        
+                        &::before {
+                            position: absolute;
+                            top: -49px;
+                            left: 0;
+
+                            content: "";
+
+                            width: 32px;
+                            height: 22px;
+
+                            background-image: url("../../../img/svg/VideoCamIco.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }                           
+                    }
+                }    
+
+            //// Main  Video
+            .Main-Video {
+                display: none;
+
+                position: relative;
+
+                &_m {width: 260px; height: 150px;}
+                &_t {width: 668px; height: 455px;}
+                &_d {width: 682px; height: 455px;}
+
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    &_m {display: block;}
+                    margin-bottom: 35px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    &_t {display: block;}  
+                    order: 1;   
+                    margin-bottom: 41px;   
+                    margin-left: -1px;          
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    &_d {display: block;}  
+                    
+                    margin-top: -1px;
+                    margin-left: -1px;
+                    grid-row: 1 / 4;
+                    grid-column: 1 / 2;
+                }
+            }   
+            
+            //// Main  Video Description Text
+            .Main-VideoDescr {
+                font-family: $basicFont;
+                font-style: normal;
+                font-weight: $normal;
+                
+                color: $mainGray;       
+
+                margin: 0;
+                padding: 0;
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    font-size: 13px;
+                    line-height: 24px;   
+                    
+                    margin-bottom: 41px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    font-size: 15px;
+                    line-height: 30px;     
+                    
+                    order: 3;
+
+                    max-width: 586px;
+                    align-self: center;
+                    margin-bottom: 40px;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    font-size: 15px;
+                    line-height: 30px;     
+                    
+                    grid-row: 2 / 3;
+                    grid-column: 2 / 3;
+                }
+            }             
+            
+            //// Main Video Descr Row
+            .Main-VideoRow {
+                display: none;
+
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    &_m {display: block;}
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    &_t {display: block;}
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    &_d {display: block;}
+                }
+            }
+
+            //// Main  VideoButton 
+            .Main-VideoButton {
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                    width: 192px;
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                    order: 4;
+                    margin: 0 auto;
+                    
+                    width: 584px;
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                    grid-row: 3 / 4;
+                    grid-column: 2 / 3;
+
+                    width: 230px;
+                }
+            }               
+
+/* Catalog Page End */

@@ -1,0 +1,29 @@
+// Include Fonts
+
+/* Open Sans Regular */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OpenSans-regular.woff');
+    src: local(''),
+         url('../fonts/OpenSans-regular.woff') format('embedded-opentype'),
+         url('../fonts/OpenSans-regular.woff2') format('woff2'), 
+  }
+
+/* Open Sans Bold */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/OpenSans-700.woff');
+    src: local(''),
+        url('../fonts/OpenSans-700.woff') format('embedded-opentype'),
+        url('../fonts/OpenSans-700.woff2') format('woff2'), 
+  }
+
+
+//// Variables
+$basicFont: 'Open Sans', 'Arial';
+$normal: 400;
+$bold: 700;

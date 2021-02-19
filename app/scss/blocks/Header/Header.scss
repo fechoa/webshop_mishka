@@ -1,0 +1,258 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Header
+.Header {
+    position: relative;
+    z-index: 66;
+    background-color: $mainWhite;
+    width: 100%;
+
+    transition: ease-in 0.2s;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        position: fixed;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+    }    
+}
+
+    ////  Wrapper
+    .Header-Wrapper {
+        position: relative;
+        z-index: 10;
+        display: flex;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+
+
+            min-width: 320px; 
+            margin: 0 auto;
+
+            border-top: 1px solid #ECECEC;
+            border-bottom: 1px solid #ECECEC;            
+
+            padding-top: 22px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 22px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+            min-width: 668px;
+            margin: 0 auto;
+
+            border-top: 1px solid #ECECEC;
+            border-bottom: 1px solid #ECECEC;     
+
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+            min-width: 1050px;
+            margin: 0 auto;
+
+            border-top: 1px solid #ECECEC;
+            border-bottom: 1px solid #ECECEC;     
+
+            padding-left: 50px;
+            padding-right: 50px;            
+        }    
+    }
+        ////  Logotype 
+        .Header-Logo {
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin-right: 205px;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                position: absolute;
+                top: 9px;
+                // left: 500px;
+
+                left: 50%;
+                transform: translate(-50%);              
+            }    
+        }     
+            ////  Logotype Image
+            .Header-LogoImg {
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                }    
+            }                   
+
+        ////  Navigation Bar
+        .Header-Nav {
+            display: block;
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                margin-top: 22px;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                margin-left: auto;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                margin-right: auto;
+            }    
+        }
+
+
+        
+
+/* Only for mobile*/        
+        //// Button Open Menu
+        .Header-ButtonMenu {
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s;
+            
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+                position: absolute;
+                top: 28px;
+                right: 30px;
+
+                margin: 0;
+                padding: 0;
+                border: 0;
+
+                width: 21px;
+                height: 21px;
+
+                background-color: transparent;
+            }
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+                display: none;
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                display: none;
+            }    
+        }     
+            //// Button Icon
+            .Header-ButtonIco {
+                transition: ease-in 0.2s;
+                // Mobile
+                @media (min-width: $mobile) and (max-width: 767px) {
+
+                    //// Open Icon
+                    &_open {
+                        margin: 0;
+                        padding: 0;
+    
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+    
+                        width: 21px;
+                        height: 2px;
+    
+                        background-color: #231F20;
+    
+                        &::before, &::after {
+                        position: absolute;
+                        left: 0;
+    
+                        content: ' ';
+                        height: 2px;
+                        width: 21px;
+                        background-color: #231F20;
+                        }
+    
+                        &::before {
+                            top: -6px;
+                        }
+    
+                        &::after {
+                            top: 6px;
+                        }    
+                    }
+          
+                    
+                    //// Close Icon
+                    &_close {
+                        margin: 0;
+                        padding: 0;
+
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+
+                        width: 21px;
+                        height: 21px;
+
+                        &::before, &::after {
+                        position: absolute;
+                        left: 9.5px;
+                        content: ' ';
+                        height: 23px;
+                        width: 2px;
+                        background-color: #333;
+                        }
+
+                        &::before {
+                        transform: rotate(45deg);
+                        }
+
+                        &::after {
+                        transform: rotate(-45deg);
+                        }                                      
+                    }
+               
+                }
+                // Tablet
+                @media (min-width: $tablet) and (max-width: 1149px) {
+                }
+                // Desktop
+                @media (min-width: $desktop) {
+                }    
+            }            
+
+
+
+  
+        
+

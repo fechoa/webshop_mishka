@@ -1,0 +1,59 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+//// Decoration Wave line GRAY
+.DecorWave {
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../img/svg/DecorWave_gray.svg');
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        height: 6px;
+        min-width: 320px;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        height: 17px;
+        min-width: 770px; 
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        height: 23px;
+        min-width: 1150px;  
+    }    
+}
+
+//// Decoration Wave line WHITE
+.DecorWave_white {
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../../img/svg/DecorWave_white.svg');
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        display: none;
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        height: 24px;
+        min-width: 770px;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        height: 34px;
+        min-width: 1150px;        
+    }    
+}

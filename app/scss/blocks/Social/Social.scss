@@ -1,0 +1,109 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Social List Styles
+.Social {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    list-style: none;
+
+    width: 142px;
+
+    padding: 0;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        margin-bottom: 50px;
+
+        //// Decoration Line
+        &::after {
+            position: absolute;
+            top: 55px;
+            left: -60px;
+
+            content: "";
+
+            height: 1px;
+            width: 260px;
+
+            background-color: #e5e5e5;
+        }
+    }
+
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        
+    }    
+}
+
+    //// Item 
+    .Social-Item {
+        margin: 0;
+        padding: 0;
+
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+
+        }
+
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+            
+        }    
+    }
+
+        //// Link 
+        .Social-Link{
+            margin: 0;
+            padding: 0;
+
+            transition: ease-in 0.2s;
+
+            //// Actions
+            &:hover, &:focus {
+                path {
+                    fill: #46C1AE;
+                }
+            }
+            &:active {
+                path {
+                    opacity: 0.3;
+                }
+            }
+
+            // Mobile
+            @media (min-width: $mobile) and (max-width: 767px) {
+
+            }
+
+            // Tablet
+            @media (min-width: $tablet) and (max-width: 1149px) {
+
+            }
+            // Desktop
+            @media (min-width: $desktop) {
+                
+            }    
+        }    

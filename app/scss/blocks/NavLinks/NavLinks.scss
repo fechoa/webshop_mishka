@@ -1,0 +1,128 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// NavLinks Styles
+.NavLinks {
+    transition: 0.2s;
+
+    text-decoration: none;
+
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $bold;
+    
+    
+    color: $mainBlack;    
+
+    //// Actions
+    &:hover, &:focus {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+
+    }
+
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+
+    }    
+}
+
+    //// NavLinks Icon Styles
+    .NavLinks-Ico {
+        margin: 0;
+        padding: 0;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        opacity: 0.2;
+
+        
+        //// Search Icon
+        &_search {
+            background-image: url('../../../img/svg/NavLinks-Ico_search.svg');
+            width: 18px;
+            height: 18px;
+        }
+        //// Basket Icon
+        &_basket {        
+            background-image: url('../../../img/svg/NavLinks-Ico_basket.svg');
+            width: 21px;
+            height: 18px;
+        }       
+        
+        
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            position: absolute;
+            left: 10%;
+            transform: translate(-10%);    
+            margin-right: -10%;
+
+        }
+
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+            //// Basket Icon
+            &_basket {        
+                margin-right: 27px;
+            }                
+        }
+
+        // Desktop
+        @media (min-width: $desktop) {     
+            //// Basket Icon
+            &_basket {        
+                margin-right: 30px;
+            }                 
+        }    
+    }    
+    //// NavLinks Text Styles
+    .NavLinks-Text {
+        margin: 0;
+        padding: 0;
+        
+        // Mobile
+        @media (min-width: $mobile) and (max-width: 767px) {
+            margin: 0 auto;
+            padding-left: 12px;
+
+            width: 200px;
+        }
+        // Tablet
+        @media (min-width: $tablet) and (max-width: 1149px) {
+
+            //// Search Text
+            &_search {
+                display: none;
+            }
+        }
+        // Desktop
+        @media (min-width: $desktop) {
+
+            //// Search Text
+            &_search {
+                display: none;
+            }            
+        }    
+    }

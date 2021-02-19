@@ -1,0 +1,48 @@
+//// Width Helper
+// Mobile
+@media (min-width: $mobile) and (max-width: 767px) {
+}
+// Tablet
+@media (min-width: $tablet) and (max-width: 1149px) {
+}
+// Desktop
+@media (min-width: $desktop) {
+}
+
+
+//// Label Style
+.LabelWeek {
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: $bold;
+
+    text-transform: uppercase;
+    
+    color: $mainGreen;
+
+    // Mobile
+    @media (min-width: $mobile) and (max-width: 767px) {
+        font-size: 17px;
+        line-height: 20px;
+    
+    }
+    // Tablet
+    @media (min-width: $tablet) and (max-width: 1149px) {
+        font-size: 17px;
+        line-height: 17px;
+
+        display: block;
+        width: 80px;
+        text-align: center;
+    }
+    // Desktop
+    @media (min-width: $desktop) {
+        font-size: 17px;
+        line-height: 17px;   
+        
+        display: block;
+        width: 80px;
+        text-align: center;
+    }    
+}
+
