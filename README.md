@@ -15,4 +15,3 @@ This project helped me to better understand HTML and CSS, and learn Flexbox at a
   <img src="./screen/2.png" width="600" alt="screenshoot">
   <img src="./screen/3.png" width="600" alt="screenshoot">
   <img src="./screen/4.png" width="600" alt="screenshoot">
-
